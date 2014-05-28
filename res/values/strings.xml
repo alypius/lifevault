@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Life Vault</string>
+    <string name="empty_string"></string>
+
+    <dimen name="tablelayout_width">264dp</dimen>
+    <dimen name="tablelayout_height">120dp</dimen>
+    <dimen name="imageview_width">60dp</dimen>
+    <dimen name="imageview_height">60dp</dimen>
+    <dimen name="textview_width">80dp</dimen>
+    <dimen name="textview_height">20dp</dimen>
+    <dimen name="button_width">25dp</dimen>
+    <dimen name="button_height">25dp</dimen>
+    <dimen name="button_margin">1dp</dimen>
+    <dimen name="media_margin">3dp</dimen>
+    <dimen name="media_margin_right">3dp</dimen>
+    <dimen name="arrow_width">16dp</dimen>
+    <dimen name="arrow_height">48dp</dimen>
+    <dimen name="save_button_width">48dp</dimen>
+    <dimen name="save_button_height">48dp</dimen>
+    <dimen name="save_button_margin">20dp</dimen>
+    <dimen name="dismiss_button_width">96dp</dimen>
+    <dimen name="dismiss_button_height">48dp</dimen>
+
+    <string name="listNew">New</string>
+    <string name="listSortBy">Sort by:</string>
+    <string name="back_text">Back</string>
+    <string name="describe_text">Describe your entry</string>
+    <string name="delete_text">Delete</string>
+    <string name="dismiss_text">Dismiss</string>
+    <string name="duplicate_text">Duplicate</string>
+    <string name="save_text">Save</string>
+    <string name="setmain_text">Set as main image</string>
+    <string name="senditem_text">Send via email to contact</string>
+    <string name="title_hint">Please enter your title</string>
+    <string name="list_title">Title</string>
+    <string name="list_datetime">DateTime</string>
+    <string name="textColor0">@android:color/black</string>
+    <string name="textColor1">#6a6a6a</string>
+    <string name="entryTextVideo">Video: </string>
+    <string name="entryTextAudio">Audio: </string>
+    <string name="entryTextPictures">Pictures: </string>
+
+    <dimen name="margin1">5dp</dimen>
+    <dimen name="margin2">3dp</dimen>
+    <dimen name="margin3">8dp</dimen>
+    <dimen name="entryTitleWidth">250dp</dimen>
+    <dimen name="entryPictureHeight">50dp</dimen>
+    <dimen name="entryPictureWidth">50dp</dimen>
+    <dimen name="listTextMarginLeft">75dp</dimen>
+    <dimen name="listTextMarginTop">5dp</dimen>
+    <dimen name="spinnerHeight">35dp</dimen>
+    <dimen name="helpButtonSize">25dp</dimen>
+    <dimen name="helpButtonMargin">15dp</dimen>
+    <dimen name="navButtonHeight">33dp</dimen>
+    <dimen name="control_button_width">120dp</dimen>
+
+</resources>

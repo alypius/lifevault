@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/paper2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/img_plus"
+                style="@style/NavigationButton"
+                android:src="@drawable/plus" >
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/text_plus"
+                style="@style/NavigationButtonText"
+                android:text="@string/listNew" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/listTextMarginLeft"
+                android:layout_marginTop="@dimen/listTextMarginTop"
+                android:text="@string/listSortBy"
+                android:textColor="@string/textColor0" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/spinnerHeight"
+                android:layout_marginTop="@dimen/margin1" >
+            </Spinner>
+        </LinearLayout>
+
+        <View style="@style/Seperator1" >
+        </View>
+
+        <ListView
+            android:id="@+id/the_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:longClickable="true" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/show_help"
+            android:layout_width="@dimen/helpButtonSize"
+            android:layout_height="@dimen/helpButtonSize"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/helpButtonMargin"
+            android:layout_marginRight="@dimen/helpButtonMargin"
+            android:onClick="myClickHandler"
+            android:src="@drawable/question" >
+        </ImageView>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- David -->
+
+    <style name="Button">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">myClickHandler</item>
+    </style>
+
+    <style name="Button.Prev">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/media_margin</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">myClickHandler</item>
+        <item name="android:background">@drawable/arrow_180</item>
+    </style>
+
+    <style name="Button.Next">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/media_margin</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:onClick">myClickHandler</item>
+        <item name="android:background">@drawable/arrow_0</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_width">@dimen/imageview_width</item>
+        <item name="android:layout_height">@dimen/imageview_height</item>
+        <item name="android:layout_margin">@dimen/media_margin</item>
+        <item name="android:onClick">displayClickHandler</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">@dimen/textview_width</item>
+        <item name="android:layout_height">@dimen/textview_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text"></item>
+    </style>
+
+    <style name="TableLayout">
+        <item name="android:layout_width">@dimen/tablelayout_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Johannes -->
+
+    <style name="NavigationButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/navButtonHeight</item>
+        <item name="android:onClick">myClickHandler</item>
+        <item name="android:layout_marginLeft">@dimen/margin1</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="NavigationButtonText">
+        <item name="android:layout_marginTop">@dimen/margin3</item>
+        <item name="android:layout_marginLeft">@dimen/margin2</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">myClickHandler</item>
+        <item name="android:textColor">@string/textColor0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ListElementTitle">
+        <item name="android:layout_width">245dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_margin">@dimen/margin1</item>
+    </style>
+
+    <style name="Seperator1">
+        <item name="android:background">@string/textColor0</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="Seperator2">
+        <item name="android:background">#ababab</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="ListElementLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#80ffffff</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ListElementSubheadline">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_marginLeft">@dimen/margin1</item>
+        <item name="android:textColor">#6a6a6a</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+</resources>

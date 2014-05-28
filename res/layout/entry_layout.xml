@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/paper2"
+        android:orientation="vertical" >
+
+        <!-- HEADLINE -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/img_back"
+                style="@style/NavigationButton"
+                android:src="@drawable/left" >
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/text_back"
+                style="@style/NavigationButtonText"
+                android:text="@string/back_text" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/entryDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin1"
+                android:gravity="right"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#6a6a6a"
+                android:textIsSelectable="true" >
+            </TextView>
+        </LinearLayout>
+
+        <View style="@style/Seperator1" >
+        </View>
+
+        <!-- TITLE, TEXT -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/entry_title"
+                    android:layout_width="@dimen/entryTitleWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin1"
+                    android:text="Title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@string/textColor0" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/location"
+                    style="@style/ListElementSubheadline"
+                    android:text="Location" />
+
+                <TextView
+                    android:id="@+id/orientation_text"
+                    style="@style/ListElementSubheadline"
+                    android:singleLine="true"
+                    android:text="Orientation" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/item_picture"
+                android:layout_width="@dimen/entryPictureWidth"
+                android:layout_height="@dimen/entryPictureHeight"
+                android:layout_margin="@dimen/margin2"
+                android:layout_weight="0"
+                android:src="@drawable/blankpic" >
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/entry_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin1"
+            android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+            android:textColor="@string/textColor0" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/edit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="myClickHandler"
+                android:text="Edit Title" />
+
+            <Button
+                android:id="@+id/edit_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="myClickHandler"
+                android:text="Edit Text" />
+
+            <Button
+                android:id="@+id/tts_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="myClickHandler"
+                android:text="Speak Text" />
+        </LinearLayout>
+
+        <View style="@style/Seperator2" >
+        </View>
+
+        <!-- FIRST ITEM PICTURES -->
+
+        <LinearLayout style="@style/ListElementLayout" >
+
+            <!-- Headline -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ListElementTitle"
+                    android:text="@string/entryTextPictures" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/add_image"
+                    style="@style/Button"
+                    android:background="@drawable/picture_plus" >
+                </Button>
+
+                <Button
+                    android:id="@+id/take_photo"
+                    style="@style/Button"
+                    android:background="@drawable/camera_plus" >
+                </Button>
+            </LinearLayout>
+
+            <!-- Content -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/previous_image"
+                    style="@style/Button.Prev" >
+                </Button>
+
+                <TableLayout style="@style/TableLayout" >
+
+                    <TableRow android:id="@+id/imagegroup" >
+
+                        <ImageView
+                            android:id="@+id/imageview_image1"
+                            style="@style/ImageView" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imageview_image2"
+                            style="@style/ImageView" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imageview_image3"
+                            style="@style/ImageView" >
+                        </ImageView>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/textview_image1"
+                            style="@style/TextView" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textview_image2"
+                            style="@style/TextView" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textview_image3"
+                            style="@style/TextView" >
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/next_image"
+                    style="@style/Button.Next" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Seperator2" >
+        </View>
+
+        <!-- SECOND ITEM AUDIO -->
+
+        <LinearLayout style="@style/ListElementLayout" >
+
+            <!-- Headline -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ListElementTitle"
+                    android:text="@string/entryTextAudio" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/add_audio"
+                    style="@style/Button"
+                    android:background="@drawable/music_plus" >
+                </Button>
+
+                <Button
+                    android:id="@+id/record_audio"
+                    style="@style/Button"
+                    android:background="@drawable/microphone_plus" >
+                </Button>
+            </LinearLayout>
+
+            <!-- Content -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/previous_audio"
+                    style="@style/Button.Prev" >
+                </Button>
+
+                <TableLayout style="@style/TableLayout" >
+
+                    <TableRow android:id="@+id/audiogroup" >
+
+                        <ImageView
+                            android:id="@+id/imageview_audio1"
+                            style="@style/ImageView" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imageview_audio2"
+                            style="@style/ImageView" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imageview_audio3"
+                            style="@style/ImageView" >
+                        </ImageView>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/textview_audio1"
+                            style="@style/TextView" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textview_audio2"
+                            style="@style/TextView" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textview_audio3"
+                            style="@style/TextView" >
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/next_audio"
+                    style="@style/Button.Next" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Seperator2" >
+        </View>
+
+        <!-- THIRD ITEM VIDEO -->
+
+        <LinearLayout style="@style/ListElementLayout" >
+
+            <!-- Headline -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ListElementTitle"
+                    android:text="@string/entryTextVideo" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/add_video"
+                    style="@style/Button"
+                    android:background="@drawable/film_plus" >
+                </Button>
+
+                <Button
+                    android:id="@+id/record_video"
+                    style="@style/Button"
+                    android:background="@drawable/camcorder_plus" >
+                </Button>
+            </LinearLayout>
+
+            <!-- Content -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/previous_video"
+                    style="@style/Button.Prev" >
+                </Button>
+
+                <TableLayout style="@style/TableLayout" >
+
+                    <TableRow android:id="@+id/videogroup" >
+
+                        <ImageView
+                            android:id="@+id/imageview_video1"
+                            style="@style/ImageView" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imageview_video2"
+                            style="@style/ImageView" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imageview_video3"
+                            style="@style/ImageView" >
+                        </ImageView>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/textview_video1"
+                            style="@style/TextView" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textview_video2"
+                            style="@style/TextView" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textview_video3"
+                            style="@style/TextView" >
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/next_video"
+                    style="@style/Button.Next" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Seperator2" >
+        </View>
+
+        <!-- THIRD ITEM CONTACTS -->
+
+        <LinearLayout style="@style/ListElementLayout" >
+
+            <!-- Headline -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ListElementTitle"
+                    android:text="Contacts:" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/add_contact"
+                    style="@style/Button"
+                    android:background="@drawable/address_book_plus" >
+                </Button>
+            </LinearLayout>
+
+            <!-- Content -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/previous_contact"
+                    style="@style/Button.Prev" >
+                </Button>
+
+                <TableLayout style="@style/TableLayout" >
+
+                    <TableRow android:id="@+id/contactgroup" >
+
+                        <ImageView
+                            android:id="@+id/imageview_contact1"
+                            style="@style/ImageView" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imageview_contact2"
+                            style="@style/ImageView" >
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/imageview_contact3"
+                            style="@style/ImageView" >
+                        </ImageView>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/textview_contact1"
+                            style="@style/TextView" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textview_contact2"
+                            style="@style/TextView" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/textview_contact3"
+                            style="@style/TextView" >
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/next_contact"
+                    style="@style/Button.Next" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Seperator2" >
+        </View>
+    </LinearLayout>
+
+</ScrollView>
