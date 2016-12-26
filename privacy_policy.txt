@@ -1,0 +1,1 @@
+This app does not transmit any personal information: the read contacts permission is requested only to facilitate sharing notes.
